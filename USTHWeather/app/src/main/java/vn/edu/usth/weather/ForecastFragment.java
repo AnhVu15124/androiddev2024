@@ -58,9 +58,9 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_forecast2, container, false);
+        View view = new View(getContext());
         view.setBackgroundColor(Color.parseColor("#20FF0000"));
-        return
+        return view;
 
     }
 }
