@@ -9,6 +9,8 @@ import android.graphics.Color;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.LinearLayout;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,53 +62,55 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Create a LinearLayout
-        LinearLayout layout = new LinearLayout(getContext());
-        layout.setOrientation(LinearLayout.VERTICAL);
-        LinearLayout forecastLayout = new LinearLayout(getContext());
-        forecastLayout.setOrientation(LinearLayout.VERTICAL);
-        // Set the background color
-        layout.setBackgroundColor(Color.parseColor("#20FF0000"));
-        // Set the blue forecast area
-        forecastLayout.setBackgroundColor(Color.parseColor("#200000FF"));
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-        );
-        params.setMargins(50, 100, 50, 50);
-        forecastLayout.setLayoutParams(params);
-
-        LinearLayout thursdayLayout = createForcast("Thursday", R.drawable.icons8sun96, "Sunny\n24C-31C");
-        LinearLayout fridayLayout = createForcast("Friday", R.drawable.icons8partlycloudyday100, "Partly Cloudy\n22C-29C");
-        LinearLayout saturdayLayout = createForcast("Saturday", R.drawable.icons8clouds100, "Cloudy\n20C-27C");
-        LinearLayout sundayLayout = createForcast("Sunday", R.drawable.icons8rain96, "Rain\n18C-25C");
-        LinearLayout mondayLayout = createForcast("Monday", R.drawable.icons8heavyrain100, "Heavy Rain\n17C-23C");
-        LinearLayout tuesdayLayout = createForcast("Tuesday", R.drawable.icons8storm100, "Storm\n16C-22C");
-        LinearLayout wednesdayLayout = createForcast("Wednesday", R.drawable.icons8snow100, "Snow\n-2C-2C");
-        forecastLayout.addView(thursdayLayout);
-        forecastLayout.addView(fridayLayout);
-        forecastLayout.addView(saturdayLayout);
-        forecastLayout.addView(sundayLayout);
-        forecastLayout.addView(mondayLayout);
-        forecastLayout.addView(tuesdayLayout);
-        forecastLayout.addView(wednesdayLayout);
-        layout.addView(forecastLayout);
-        return layout;
+        return inflater.inflate(R.layout.fragment_forecast2, container, false);
+//        // Create a LinearLayout
+//        LinearLayout layout = new LinearLayout(getContext());
+//        layout.setOrientation(LinearLayout.VERTICAL);
+//        // Set the background color
+//        layout.setBackgroundColor(Color.parseColor("#20FF0000"));
+//
+////        LinearLayout forecastLayout = new LinearLayout(getContext());
+////        forecastLayout.setOrientation(LinearLayout.VERTICAL);
+////        // Set the blue forecast area
+////        forecastLayout.setBackgroundColor(Color.parseColor("#200000FF"));
+////        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+////                LinearLayout.LayoutParams.MATCH_PARENT,
+////                LinearLayout.LayoutParams.WRAP_CONTENT
+////        );
+////        params.setMargins(50, 100, 50, 50);
+////        forecastLayout.setLayoutParams(params);
+////
+////        LinearLayout thursdayLayout = createForcast("Thursday", R.drawable.icons8sun96, "Sunny\n24C-31C");
+////        LinearLayout fridayLayout = createForcast("Friday", R.drawable.icons8partlycloudyday100, "Partly Cloudy\n22C-29C");
+////        LinearLayout saturdayLayout = createForcast("Saturday", R.drawable.icons8clouds100, "Cloudy\n20C-27C");
+////        LinearLayout sundayLayout = createForcast("Sunday", R.drawable.icons8rain96, "Rain\n18C-25C");
+////        LinearLayout mondayLayout = createForcast("Monday", R.drawable.icons8heavyrain100, "Heavy Rain\n17C-23C");
+////        LinearLayout tuesdayLayout = createForcast("Tuesday", R.drawable.icons8storm100, "Storm\n16C-22C");
+////        LinearLayout wednesdayLayout = createForcast("Wednesday", R.drawable.icons8snow100, "Snow\n-2C-2C");
+////        forecastLayout.addView(thursdayLayout);
+////        forecastLayout.addView(fridayLayout);
+////        forecastLayout.addView(saturdayLayout);
+////        forecastLayout.addView(sundayLayout);
+////        forecastLayout.addView(mondayLayout);
+////        forecastLayout.addView(tuesdayLayout);
+////        forecastLayout.addView(wednesdayLayout);
+////        layout.addView(forecastLayout);
+//        return layout;
     }
-    private LinearLayout createForcast(String day, int imageID, String forecastText) {
-        LinearLayout forecastLayout = new LinearLayout(getContext());
-        forecastLayout.setOrientation(LinearLayout.HORIZONTAL);
-
-        TextView textView1 = new TextView(getContext());
-        textView1.setText(day);
-        ImageView imageView1 = new ImageView(getContext());
-        imageView1.setImageResource(imageID);
-        TextView textView2 = new TextView(getContext());
-        textView2.setText(forecastText);
-        forecastLayout.addView(textView1);
-        forecastLayout.addView(imageView1);
-        forecastLayout.addView(textView2);
-
-        return forecastLayout;
-    }
+//    private LinearLayout createForcast(String day, int imageID, String forecastText) {
+//        LinearLayout forecastLayout = new LinearLayout(getContext());
+//        forecastLayout.setOrientation(LinearLayout.HORIZONTAL);
+//
+//        TextView textView1 = new TextView(getContext());
+//        textView1.setText(day);
+//        ImageView imageView1 = new ImageView(getContext());
+//        imageView1.setImageResource(imageID);
+//        TextView textView2 = new TextView(getContext());
+//        textView2.setText(forecastText);
+//        forecastLayout.addView(textView1);
+//        forecastLayout.addView(imageView1);
+//        forecastLayout.addView(textView2);
+//
+//        return forecastLayout;
+//    }
 }

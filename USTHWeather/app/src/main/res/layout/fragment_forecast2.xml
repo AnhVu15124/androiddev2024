@@ -1,14 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ForecastFragment">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E8EAF6"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thursday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
 
-</FrameLayout>
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8sun96" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Sunny\n24C - 31C"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Friday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8partlycloudyday100" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Partly Cloudy\n22C - 29C"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Saturday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8clouds100" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Partly Cloudy\n20C - 27C"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sunday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8rain96" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Rain\n18C - 20C"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Monday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8heavyrain100" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Heavy rain\n17C - 23C"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tuesday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8storm100" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Storm\n10C - 15C"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wednesday"
+            android:textSize="18sp"
+            android:gravity="center_vertical" />
+
+        <!-- Weather icon -->
+        <ImageView
+            android:layout_width="61dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/icons8snow100" />
+
+        <!-- Weather details -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Sunny\n-5C - 0C"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
