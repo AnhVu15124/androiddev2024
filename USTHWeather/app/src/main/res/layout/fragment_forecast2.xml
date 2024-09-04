@@ -20,7 +20,6 @@
             android:textSize="18sp"
             android:gravity="center_vertical" />
 
-        <!-- Weather icon -->
         <ImageView
             android:layout_width="61dp"
             android:layout_height="79dp"
@@ -28,7 +27,6 @@
             android:layout_weight="1"
             android:src="@drawable/icons8sun96" />
 
-        <!-- Weather details -->
         <TextView
             android:layout_width="1dp"
             android:layout_height="wrap_content"
