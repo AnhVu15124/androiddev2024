@@ -2,23 +2,24 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#ffffff"
     android:orientation="vertical"
-    android:background="#E8EAF6"
     android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Thursday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <ImageView
             android:layout_width="61dp"
@@ -39,16 +40,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Friday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
@@ -67,19 +69,21 @@
             android:text="Partly Cloudy\n22C - 29C"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Saturday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
@@ -98,19 +102,21 @@
             android:text="Partly Cloudy\n20C - 27C"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Sunday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
@@ -129,19 +135,21 @@
             android:text="Rain\n18C - 20C"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Monday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
@@ -160,19 +168,21 @@
             android:text="Heavy rain\n17C - 23C"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Tuesday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
@@ -191,19 +201,21 @@
             android:text="Storm\n10C - 15C"
             android:textSize="16sp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:background="#BEBEBE">
+        android:padding="8dp">
+
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="49dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center_vertical"
             android:text="Wednesday"
-            android:textSize="18sp"
-            android:gravity="center_vertical" />
+            android:textSize="18sp" />
 
         <!-- Weather icon -->
         <ImageView
