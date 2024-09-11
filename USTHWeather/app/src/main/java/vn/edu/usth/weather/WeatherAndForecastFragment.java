@@ -43,8 +43,6 @@ public class WeatherAndForecastFragment extends Fragment {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.weather, new WeatherFragment());
         transaction.replace(R.id.forecast, new ForecastFragment());
-
-        // Commit the transaction
         transaction.commit();
 
         return view;

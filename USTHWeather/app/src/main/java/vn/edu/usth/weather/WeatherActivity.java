@@ -20,7 +20,6 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        // Set up the ViewPager and TabLayout
         ViewPager viewPager = findViewById(R.id.view_pager);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
 
@@ -72,19 +71,16 @@ public class WeatherActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            // Return a new instance of WeatherAndForecastFragment
             return new WeatherAndForecastFragment();
         }
 
         @Override
         public int getCount() {
-            // Number of pages
             return 3;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            // Set the title of each tab
             return tabTitles[position];
         }
     }
