@@ -62,7 +62,7 @@ public class WeatherActivity extends AppCompatActivity {
 
     // Inner class for the PagerAdapter
     private class WeatherPagerAdapter extends FragmentPagerAdapter {
-        private final String[] tabTitles = new String[]{"HaNoi VietNam", "Paris France", "Toulouse France"};
+        private final String[] tabTitles = getResources().getStringArray(R.array.tab_titles);
 
         public WeatherPagerAdapter(@NonNull FragmentManager fm) {
             super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);

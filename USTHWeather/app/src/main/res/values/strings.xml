@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">USTH Weather</string>
     <string name="title_activity_weather">WeatherActivity</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather_temperature_paris">12C\nSunny</string>
+    <string name="weather_location_paris">Paris</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="weather_thursday">Sunny\n24C - 31C</string>
+    <string name="weather_friday">Partly Cloudy\n22C - 29C</string>
+    <string name="weather_saturday">Partly Cloudy\n20C - 27C</string>
+    <string name="weather_sunday">Rain\n18C - 20C</string>
+    <string name="weather_monday">Heavy rain\n17C - 23C</string>
+    <string name="weather_tuesday">Storm\n10C - 15C</string>
+    <string name="weather_wednesday">Sunny\n-5C - 0C</string>
+
+    <string-array name="tab_titles">
+        <item>HaNoi, VietNam</item>
+        <item>Paris, France</item>
+        <item>Toulouse, France</item>
+    </string-array>
 </resources>

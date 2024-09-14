@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding and margins -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="height_icon">79dp</dimen>
+    <dimen name="width_icon">61dp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">1dp</dimen>
+    <dimen name="weather_info_height">200dp</dimen>
+    <dimen name="text_view_width">49dp</dimen>
+    <dimen name="large_width_icon">198dp</dimen>
+    <dimen name="large_height_icon">187dp</dimen>
+</resources>

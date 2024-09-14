@@ -2,237 +2,237 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="@color/white"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/padding_medium">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Thursday"
-            android:textSize="18sp" />
+            android:text="@string/day_thursday"
+            android:textSize="@dimen/text_size_large" />
 
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8sun96" />
 
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Sunny\n24C - 31C"
-            android:textSize="16sp" />
+            android:text="@string/weather_thursday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Friday"
-            android:textSize="18sp" />
+            android:text="@string/day_friday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8partlycloudyday100" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Partly Cloudy\n22C - 29C"
-            android:textSize="16sp" />
+            android:text="@string/weather_friday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Saturday"
-            android:textSize="18sp" />
+            android:text="@string/day_saturday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8clouds100" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Partly Cloudy\n20C - 27C"
-            android:textSize="16sp" />
+            android:text="@string/weather_saturday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Sunday"
-            android:textSize="18sp" />
+            android:text="@string/day_sunday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8rain96" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Rain\n18C - 20C"
-            android:textSize="16sp" />
+            android:text="@string/weather_sunday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Monday"
-            android:textSize="18sp" />
+            android:text="@string/day_monday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8heavyrain100" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Heavy rain\n17C - 23C"
-            android:textSize="16sp" />
+            android:text="@string/weather_monday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Tuesday"
-            android:textSize="18sp" />
+            android:text="@string/day_tuesday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8storm100" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Storm\n10C - 15C"
-            android:textSize="16sp" />
+            android:text="@string/weather_tuesday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="Wednesday"
-            android:textSize="18sp" />
+            android:text="@string/day_wednesday"
+            android:textSize="@dimen/text_size_large" />
 
         <!-- Weather icon -->
         <ImageView
-            android:layout_width="61dp"
-            android:layout_height="79dp"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8snow100" />
 
         <!-- Weather details -->
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Sunny\n-5C - 0C"
-            android:textSize="16sp" />
+            android:text="@string/weather_wednesday"
+            android:textSize="@dimen/padding_medium" />
     </LinearLayout>
 
 </LinearLayout>

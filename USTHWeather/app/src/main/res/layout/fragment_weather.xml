@@ -2,38 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ffffff"
+    android:background="@color/white"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/padding_medium">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#ccffa2"
+        android:layout_height="@dimen/weather_info_height"
+        android:background="@color/light_green"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="@dimen/padding_small">
 
         <TextView
-            android:layout_width="49dp"
+            android:layout_width="@dimen/text_view_width"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="12C\nSunny"
-            android:textSize="18sp" />
+            android:text="@string/weather_temperature_paris"
+            android:textSize="@dimen/text_size_large" />
 
         <ImageView
-            android:layout_width="198dp"
-            android:layout_height="187dp"
+            android:layout_width="@dimen/large_width_icon"
+            android:layout_height="@dimen/large_height_icon"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:src="@drawable/icons8sun96" />
 
         <TextView
-            android:layout_width="1dp"
+            android:layout_width="@dimen/text_size_small"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center_vertical"
-            android:text="Paris"
-            android:textSize="16sp" />
+            android:text="@string/weather_location_paris"
+            android:textSize="@dimen/text_size_medium" />
     </LinearLayout>
 </LinearLayout>

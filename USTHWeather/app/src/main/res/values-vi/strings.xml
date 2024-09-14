@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Thời tiết USTH</string>
+    <string name="title_activity_weather">Hoạt động Thời tiết</string>
+    <string name="hello_blank_fragment">Xin chào blank fragment</string>
+    <string name="weather_temperature_paris">12C\nNắng</string>
+    <string name="weather_location_paris">Paris</string>
+    <string name="day_thursday">Thứ Năm</string>
+    <string name="day_friday">Thứ Sáu</string>
+    <string name="day_saturday">Thứ Bảy</string>
+    <string name="day_sunday">Chủ Nhật</string>
+    <string name="day_monday">Thứ Hai</string>
+    <string name="day_tuesday">Thứ Ba</string>
+    <string name="day_wednesday">Thứ Tư</string>
+    <string name="weather_thursday">Nắng\n24C - 31C</string>
+    <string name="weather_friday">Ít mây\n22C - 29C</string>
+    <string name="weather_saturday">Ít mây\n20C - 27C</string>
+    <string name="weather_sunday">Mưa\n18C - 20C</string>
+    <string name="weather_monday">Mưa lớn\n17C - 23C</string>
+    <string name="weather_tuesday">Bão\n10C - 15C</string>
+    <string name="weather_wednesday">Nắng\n-5C - 0C</string>
+
+    <string-array name="tab_titles">
+        <item>Hà Nội, Việt Nam</item>
+        <item>Paris, Pháp</item>
+        <item>Toulouse, Pháp</item>
+    </string-array>
+</resources>
+
