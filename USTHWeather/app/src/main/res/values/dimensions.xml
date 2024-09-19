@@ -11,5 +11,6 @@
     <dimen name="weather_info_height">200dp</dimen>
     <dimen name="text_view_width">49dp</dimen>
     <dimen name="large_width_icon">198dp</dimen>
-    <dimen name="large_height_icon">187dp</dimen>
+    <dimen name="large_height_icon">123dp</dimen>
+    <dimen name="marginTop">50dp</dimen>
 </resources>
