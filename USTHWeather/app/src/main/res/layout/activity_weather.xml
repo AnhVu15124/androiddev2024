@@ -7,10 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".WeatherActivity">
 
+    <!-- AppBarLayout to contain the Toolbar and TabLayout -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginTop"
+            android:background="@color/blue"
+            app:titleTextColor="@color/white" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
@@ -19,6 +27,7 @@
             app:tabTextColor="@color/black"
             app:tabGravity="fill"
             app:tabMode="fixed" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
