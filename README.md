@@ -12,5 +12,6 @@ Student Info
 
 * Name: Tran Anh Vu
 * ID: 22BI1382
-* Group ID: 22
-* Project Name: *Your Project Name here*
+* Group ID: 14
+* Project Name: Chess.com Stats
+
