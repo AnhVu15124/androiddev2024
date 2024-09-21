@@ -9,7 +9,7 @@
         android:icon="@drawable/reload"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/action_sth"
+        android:id="@+id/setting"
         android:title="Setting"
         app:showAsAction="never"/>
 </menu>

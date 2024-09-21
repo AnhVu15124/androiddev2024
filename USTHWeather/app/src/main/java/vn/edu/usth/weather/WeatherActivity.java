@@ -4,12 +4,13 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-
+import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -168,12 +169,41 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
         if (itemId == R.id.refresh) {
-            Toast.makeText(this, "Refresh", Toast.LENGTH_SHORT).show();
+            new SimulateNetworkTask().execute();
             return true;
-        } else if (itemId == R.id.action_sth) {
-            Toast.makeText(this, "Doing Something", Toast.LENGTH_SHORT).show();
+        } else if (itemId == R.id.setting) {
+            Intent intent = new Intent(this, PrefActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
+    // AsyncTask to simulate network request
+    private class SimulateNetworkTask extends AsyncTask<Void, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            // Show a toast when the task starts
+            Toast.makeText(WeatherActivity.this, "Refreshing...", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            return "Data Refreshed";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }
