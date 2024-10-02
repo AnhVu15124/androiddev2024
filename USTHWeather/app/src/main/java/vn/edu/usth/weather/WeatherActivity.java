@@ -4,6 +4,8 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.util.Log;
@@ -48,7 +50,6 @@ public class WeatherActivity extends AppCompatActivity {
 
         Log.i(TAG, "onCreate() called");
 
-        // Request write permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
@@ -70,7 +71,6 @@ public class WeatherActivity extends AppCompatActivity {
 
     private void extractAndPlayMusic() {
         try {
-            // Extract the MP3 file to the external storage
             File musicFile = new File(getExternalFilesDir(Environment.DIRECTORY_MUSIC), "music.mp3");
             if (!musicFile.exists()) {
                 InputStream is = getResources().openRawResource(R.raw.music);
@@ -88,7 +88,6 @@ public class WeatherActivity extends AppCompatActivity {
                 Log.i(TAG, "MP3 file extracted to: " + musicFile.getAbsolutePath());
             }
 
-            // Play the music file
             mediaPlayer = new MediaPlayer();
             mediaPlayer.setDataSource(musicFile.getAbsolutePath());
             mediaPlayer.prepare();
@@ -148,7 +147,16 @@ public class WeatherActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Fragment getItem(int position) {
-            return new WeatherAndForecastFragment();
+            switch (position) {
+                case 0:
+                    return new ForecastFragment();
+                case 1:
+                    return new WeatherAndForecastFragment();
+                case 2:
+                    return new WeatherFragment();
+                default:
+                    return new WeatherAndForecastFragment();
+            }
         }
 
         @Override
@@ -178,7 +186,6 @@ public class WeatherActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    // AsyncTask to simulate network request
     private class SimulateNetworkTask extends AsyncTask<Void, Void, String> {
 
         @Override
@@ -205,5 +212,25 @@ public class WeatherActivity extends AppCompatActivity {
             Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_SHORT).show();
         }
     }
+
+    /*private void simulateNetworkRequest() {
+        Toast.makeText(this, "Refreshing...", Toast.LENGTH_SHORT).show();
+
+        // Run a background thread to simulate a network request
+        new Thread(() -> {
+            try {
+                // Simulate network request delay (2 seconds)
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            // Use Handler to post back to the main thread
+            new Handler(Looper.getMainLooper()).post(() -> {
+                // Show toast on the main thread after "network request"
+                Toast.makeText(WeatherActivity.this, "Data Refreshed!", Toast.LENGTH_SHORT).show();
+            });
+        }).start();
+    }*/
 
 }
