@@ -219,15 +219,12 @@ public class WeatherActivity extends AppCompatActivity {
         // Run a background thread to simulate a network request
         new Thread(() -> {
             try {
-                // Simulate network request delay (2 seconds)
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            // Use Handler to post back to the main thread
             new Handler(Looper.getMainLooper()).post(() -> {
-                // Show toast on the main thread after "network request"
                 Toast.makeText(WeatherActivity.this, "Data Refreshed!", Toast.LENGTH_SHORT).show();
             });
         }).start();
